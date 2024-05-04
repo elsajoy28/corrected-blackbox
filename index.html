@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Beauty</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9ece1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #ffe9d2; /* Coral navigation bar */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        /* Product Display Styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .product-description {
+            font-size: 14px;
+            color: #666; /* Adjusted for better readability */
+        }
+        
+        /* Floral Accents Styles */
+        .floral-accents {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        
+        .floral-accents img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#makeup">Makeup</a></li>
+                <li><a href="#skincare">Skincare</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product Display -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="makeup-product.jpg" alt="Makeup Product" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Luxury Foundation</h2>
+                    <p class="product-description">Our best-selling foundation provides flawless coverage and a natural finish.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="skincare-product.jpg" alt="Skincare Product" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Hydrating Moisturizer</h2>
+                    <p class="product-description">Our top-rated moisturizer hydrates and nourishes the skin for a healthy glow.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floral Accents -->
+        <div class="floral-accents">
+            <img src="floral-1.png" alt="Floral Accent 1">
+            <img src="floral-2.png" alt="Floral Accent 2">
+            <img src="floral-3.png" alt="Floral Accent 3">
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2021 Rosa Beauty. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add event listeners to navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                // Add logic to navigate to corresponding section or page
+            });
+        });
+    </script>
+</body>
+</html>
